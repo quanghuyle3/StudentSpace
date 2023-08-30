@@ -4,38 +4,37 @@ In this project, a social media application was developed specifically for high 
 ## Demo
 #### Admin's pages
 
-https://github.com/quanghuyle3/StudentSpace/assets/65510865/f9f18102-b843-4730-a3a8-70c211de88ef
+https://github.com/quanghuyle3/StudentSpace/assets/65510865/9705656e-6893-413b-87a0-c97fe08e2fb7
 
 
 #### New user registration and login
 
-https://github.com/quanghuyle3/StudentSpace/assets/65510865/544f18dc-aa75-4153-bf68-e3d57602b179
+https://github.com/quanghuyle3/StudentSpace/assets/65510865/dd8b86a7-193b-48c6-ab70-7c9cf67a122b
 
 
 #### Add, edit, and delete posts
 
-https://github.com/quanghuyle3/StudentSpace/assets/65510865/7c9cfa0d-a1f8-47d9-be71-980e5480d0fc
+https://github.com/quanghuyle3/StudentSpace/assets/65510865/dc15f6df-b2f1-4752-9e62-83e6db67b41d
 
 
 #### Like and comment on posts
 
-https://github.com/quanghuyle3/StudentSpace/assets/65510865/f5637be1-37d3-402d-bfdb-95a2930cb3b0
+https://github.com/quanghuyle3/StudentSpace/assets/65510865/a27b3cde-d65d-4cf7-80d0-51e82bf1e78e
 
 
 #### Search for user's posts
 
-https://github.com/quanghuyle3/StudentSpace/assets/65510865/9fdb26fb-4410-48b1-8def-0f634e4c771d
+https://github.com/quanghuyle3/StudentSpace/assets/65510865/aaf11727-32a5-42a5-b705-c3f75cbae9f6
 
 
 #### Dockerize PostgreSQL database and host on DigitalOcean
 
-https://github.com/quanghuyle3/StudentSpace/assets/65510865/a5085ded-0544-4859-95e8-dc651abe3b33
+https://github.com/quanghuyle3/StudentSpace/assets/65510865/3281f07b-eab2-4dfe-a516-b2d2a0e76e4b
 
 
 #### Connect the application on IntelliJ IDE to the hosted cloud database
 
-https://github.com/quanghuyle3/StudentSpace/assets/65510865/f8cbac12-8bcc-43b6-9fcc-33304b91d148
-
+https://github.com/quanghuyle3/StudentSpace/assets/65510865/1218d577-fec8-4de4-bd31-e9bf9b69013d
 
 
 ## Features
@@ -66,7 +65,7 @@ https://github.com/quanghuyle3/StudentSpace/assets/65510865/f8cbac12-8bcc-43b6-9
 
 ## Entity Relationship Diagram (ERD)
 
-![ERD](https://github.com/quanghuyle3/StudentSpace/assets/65510865/7fea6e56-3d2f-4488-89ff-6854c4912be7)
+![ERD](https://github.com/quanghuyle3/StudentSpace/assets/65510865/72ea5315-7c2b-4546-8dda-99260dda4e89)
 
 
 ##### For more information, please take a look at the report uploaded on Google Drive with the link embedded in the About section of this GitHub page.
