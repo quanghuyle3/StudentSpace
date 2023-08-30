@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<style>
+    body {
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+    }
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        margin: 50px auto;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #3e8e41;
+    }
+    .error-message {
+        color: red;
+        margin-top: 5px;
+        font-size: 0.8em;
+    }
+</style>
+<body>
+
+<form th:method="POST" th:action="@{/auth/registration}" th:object="${person}">
+    <label for="email">Email: </label>
+    <input type="text" th:field="*{email}" id="email"/>
+    <div style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</div>
+    <br/>
+    <label for="studentId">studentId: </label>
+    <input type="text" th:field="*{studentId}" id="studentId" maxlength="7" />
+    <div style="color:red" th:if="${#fields.hasErrors('studentId')}" th:errors="*{studentId}">studentId Error</div>
+    <br/>
+    <label for="password">Password: </label>
+    <input type="text" th:field="*{password}" id="password"/>
+    <div style="color:red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</div>
+    <br/>
+    <label for="address">Address: </label>
+    <input type="text" th:field="*{address}" id="address"/>
+    <div style="color:red" th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Address Error</div>
+    <br/>
+    <label for="dateOfBirth">Date of Birth: </label>
+    <input type="date" th:field="*{dateOfBirth}" id="dateOfBirth" required/>
+    <div style="color:red" th:if="${#fields.hasErrors('dateOfBirth')}" th:errors="*{dateOfBirth}">Year of birth Error</div>
+    <br/>
+    <label for="firstName">First Name: </label>
+    <input type="text" th:field="*{firstName}" id="firstName"/>
+    <div style="color:red" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Name Error</div>
+    <br/>
+    <label for="lastName">Second Name: </label>
+    <input type="text" th:field="*{lastName}" id="lastName"/>
+    <div style="color:red" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Surname Error</div>
+    <br/>
+    <input type="submit" value="Sign up"/>
+</form>
+
+</body>
+</html>

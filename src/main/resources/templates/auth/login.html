@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<style>
+    body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+    }
+
+    form {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        padding: 20px;
+        margin: 50px auto;
+        max-width: 500px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+
+    form input[type="submit"] {
+
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    form input[type="button"] {
+        margin-left: 310px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+
+    form input[type="submit"]:hover {
+        background-color: #0062a3;
+    }
+
+    form div {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+</style>
+
+<body>
+
+<form name="f" method="post" action="/process_login">
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+
+    <label for="username">email: </label>
+    <input type="text" name="username" id="username"/>
+    <br/>
+    <label for="password">password: </label>
+    <input type="password" name="password" id="password"/>
+    <br/>
+    <div style="display: inline-block">
+        <input type="submit" value="Login"/>
+        <input type="button" onclick="location.href='/auth/registration';" value="Sign up"/>
+    </div>
+    <div th:if="${param.error}" style="color: red">
+        Email or password is wrong
+    </div>
+</form>
+
+
+</body>
+</html>
